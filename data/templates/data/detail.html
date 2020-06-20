@@ -1,0 +1,9 @@
+{% extends 'data/base.html' %}
+{% load static %}
+{% block content %}
+<div class="jumbotron">
+    <h1><a href="{% url 'data:article_list' %}">{{ article.title }}</a></h1>
+    <h5>Category:{{ article.category }}</h5>
+    <p>{{ article.description }}</p>
+</div>
+{% endblock %}
